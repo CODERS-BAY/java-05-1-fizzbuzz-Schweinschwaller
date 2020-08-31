@@ -1,0 +1,20 @@
+public class Repetitions {
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 100; i++) {
+            if ((i % 3 == 0) && !(i % 5 == 0)) {
+                System.out.print("Fizz(" + i + ")! ");
+            } else if (!(i % 3 == 0) && (i % 5 == 0)) {
+                System.out.print("Buzz(" + i + ")! ");
+            } else if ((i % 3 == 0) && (i % 5 == 0)) {
+                System.out.print("FuzzBuzz(" + i + ")! ");
+            } else {
+                System.out.print(i + "! ");
+            }
+
+            if (i % 10 == 0) {
+                System.out.println();
+            }
+        }
+    }
+}
